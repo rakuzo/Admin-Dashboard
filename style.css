@@ -56,13 +56,40 @@ img {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
 }
 
 .sidebar {
     /* border: 1px solid green; */
 	background-color: skyblue;
     grid-row: 1 / 3;
+
+	display: grid;
+	grid-template-rows: 100px 1fr 2fr;
+	padding-left: 20px;
+}
+
+.dashbord {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashbord>p {
+	/* display: inline; */
+	font-size: 1.5rem;
+}
+
+.navigation,
+.config {
+	/* background-color: goldenrod; */
+	/* align-self: center; */
+	display: grid;
+	align-content: start;
+	gap: 25px;
+	padding-top: 25px;
 }
 
 .header {
