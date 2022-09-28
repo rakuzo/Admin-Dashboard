@@ -56,7 +56,7 @@ img {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) 4fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -97,8 +97,33 @@ img {
 	background-color: aliceblue;
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
+
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 }
 
+.user-panel>p,
+.search-section>p {
+	display: inline;
+}
+
+.user-info {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 3fr;
+}
+
+.user-info>img {
+	grid-row: 1 / 3;
+	margin-left: 15px;
+}
+
+.sorting {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-content: space-around;
+    gap: 20px;
+}
 .main-container {
     /* border: 1px solid salmon; */
 	background-color: whitesmoke;
