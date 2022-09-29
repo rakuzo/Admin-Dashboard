@@ -49,6 +49,10 @@ table {
 
 /* CSS Reset End */
 
+:root {
+	--text-content: #666666;
+}
+
 svg {
     width: 24px;
     height: 24px;
@@ -85,12 +89,17 @@ img {
 	grid-template-columns: auto auto;
 	justify-content: start;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+.dashbord>.logo {
+	height: 42px;
+	width: 42px;
 }
 
 .dashbord>p {
 	/* display: inline; */
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 
 .navigation {
@@ -191,6 +200,7 @@ img {
 
 .section-header {
 	font-size: 1.3rem;
+	font-weight: bold;
 }
 
 .project {
@@ -207,18 +217,41 @@ img {
 	grid-column: 1 / 3;
 }
 
+.title {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
 .card-container {
 	grid-column: 1 / 3;
 
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-auto-rows: 200px;
 	gap: 15px;
 }
 
 .card {
 	background-color: white;
-	border: 1px solid black;
+	box-shadow: 1px 3px 3px #00000059;
+	border-radius: 15px;
+	padding: 20px 15px;
+	border-left: 8px solid chartreuse;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	gap: 10px;
+}
+
+.description {
+	color: var(--text-content);
+}
+
+.card>.option {
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	justify-items: end;
+	gap: 15px;
 }
 
 .annoucement {
