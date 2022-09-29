@@ -193,7 +193,7 @@ img {
 
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto 1fr;
 	gap: 15px;
 	padding: 15px;
 }
@@ -254,8 +254,13 @@ img {
 	gap: 15px;
 }
 
-.annoucement {
-	background-color: darkolivegreen;
+.block>.imp {
+	font-size: 0.9rem;
+}
+
+.block>.imp>.title {
+	font-size: 1rem;
+	padding-bottom: 5px;
 }
 
 .annoucement>p,
@@ -264,7 +269,9 @@ img {
 }
 
 .block {
-	border: 1px solid black;
+	border: 0;
+	border-radius: 15px;
+	box-shadow: 1px 3px 3px #00000059;
 	background-color: white;
 	display: grid;
 	row-gap: 15px;
@@ -273,6 +280,7 @@ img {
 
 .block>.imp {
 	border-bottom: 1px solid black;
+	padding-bottom: 15px;
 }
 
 .imp:last-child {
@@ -280,13 +288,16 @@ img {
 }
 
 .trending {
-	background-color: deepskyblue;
 	grid-column-start: 2;
 }
 
 .user-trend {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr;
+	column-gap: 15px;
+	row-gap: 0.3rem;
+	font-size: 0.9rem;
 }
 
 .user-trend>img {
@@ -296,4 +307,5 @@ img {
 .user-trend>.status {
 	grid-row-start: 2;
 	grid-column-start: 2;
+	color: var(--text-content);
 }
