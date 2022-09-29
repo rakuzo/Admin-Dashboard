@@ -146,10 +146,22 @@ img {
 	gap: 10px;
 }
 
+.search-section>svg path {
+	fill: var(--sidebar-color);
+}
+
 .search-section>input[type="text"] {
+	font-size: 1.3rem;
+	color: var(--sidebar-color);
 	border: 0;
 	border-radius: 15px;
 	height: 1.5rem;
+	/* padding-left: 5px; */
+}
+
+.search-section>input[type="text"]:focus {
+	outline: none;
+	box-shadow: 2px 2px 2px var(--sidebar-color);
 }
 
 .user-panel>p,
@@ -175,6 +187,8 @@ img {
 }
 
 .user-info>.bg-picture {
+	border: 2px dashed var(--sidebar-color);
+	border-radius: 50%;
 	grid-row: 1 / 3;
 	height: 80px;
 	width: 80px;
