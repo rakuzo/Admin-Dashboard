@@ -49,6 +49,8 @@ table {
 
 /* CSS Reset End */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
 :root {
 	--sidebar-color: #92400e;
 	--stripe-color: #f59e0b;
@@ -56,6 +58,10 @@ table {
 	--main-background: #fef3c7;
 	--card-color: #fffbeb;
 	--text-content: #666666;
+}
+
+body {
+	font-family: 'Inter Tight', sans-serif;
 }
 
 svg {
@@ -96,7 +102,7 @@ img {
 	grid-template-columns: auto auto;
 	justify-content: start;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .dashbord>.logo {
@@ -106,6 +112,7 @@ img {
 
 .dashbord>p {
 	font-size: 1.6rem;
+	font-weight: bold;
 }
 
 .navigation {
@@ -196,6 +203,12 @@ img {
 
 .user-info>.name-info {
 	padding-top: 10px;
+}
+
+.user-header {
+	padding-top: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .sorting {
